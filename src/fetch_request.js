@@ -33,7 +33,8 @@ export default class fetchRequest {
 
 		const requestOptions = {
 			method: this.method,
-			headers
+			headers,
+			credentials: 'include'
 		};
 
 		if (Array.isArray(this.body)) {
